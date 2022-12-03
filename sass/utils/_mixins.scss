@@ -1,0 +1,18 @@
+@mixin section($pt: 94px, $pb: 94px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+@mixin button {
+  display: block;
+  cursor: pointer;
+  
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  border: none;
+  border-radius: 4px;
+}

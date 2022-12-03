@@ -1,0 +1,122 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    background-color: var(--background-footer-color--);
+        &__caption {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--background-color--);
+      }
+        &__container {
+        display: flex;
+        align-items: baseline;
+      }
+        &__main {
+        margin-right: 70px;
+      }
+        &__var-text {
+        color: var(--background-color--);
+      }
+}
+
+  .address {
+    margin-top: 20px;
+  
+    font-style: normal;
+
+        &__item:not(:last-child) {
+        margin-bottom: 9px;
+      }
+        &__map {
+        color: var(--background-color--);
+        line-height: 1.7;
+      }
+        &__contact {
+        color: var(--footer-text-color--);
+        line-height: 1.7;
+      }
+  }
+
+  /* Social */
+  
+  .social {
+    margin-right: auto;
+
+        &__text {
+        margin-bottom: 20px;
+      }
+        &__list {
+        display: flex;
+      }
+        &__item:not(:last-child) {
+        margin-right: 10px;
+      }
+        &__link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      
+        color: var(--background-color--);
+        background-color: rgba(255, 255, 255, 0.1);
+      
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+        &__icon {
+        fill: currentColor;
+      }
+        &__link:hover,
+        &__link:focus {
+        background-color: var(--accent-first-color--);
+      }
+  }
+  
+  /* Subscription */
+
+  .subscription {
+    
+        &__text {
+        margin-bottom: 20px;
+      }
+        &__form {
+        display: flex;
+      }
+        &__field {
+        margin-right: 12px;
+      }
+        &__input {
+      display: block;
+      padding: 15px 16px;
+      
+      width: 358px;
+      height: 50px;
+      
+      background-color: inherit;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      color: var(--background-color--);
+      
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+        &__input:focus {
+        border-color: var(--accent-first-color--);
+        outline: none;
+      }
+        &__input::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: var(--footer-text-color--);
+      }
+      
+        &__icon {
+      margin-left: 10px;
+      }
+  }
