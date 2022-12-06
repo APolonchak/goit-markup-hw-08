@@ -1,41 +1,142 @@
-.features {
-      @include section;
 
-        &__list {
-        display: flex;
-      }
-        &__item {
-        width: 270px;
-      }
-        &__item:not(:last-child) {
-        margin-right: 30px;
-      }
-        &__decor {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
+  // Mobile screen
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+          &__list {
+          display: block;
+       }
+          &__item {
+          width: 450px;
+       }
+          &__item:not(:last-child) {
+          margin-bottom: 30px;
+          }
+          &__decor { 
+          display: flex;
+          justify-content: center; 
+          align-items: center; 
+          margin-bottom: 30px;
       
-        background-color: var(--buttons-port-color--);
-        width: 270px;
-        height: 120px;
-      }
-        &__caption {
-        margin-bottom: 10px;
+          background-color: var(--buttons-port-color--); 
+          width: 450px; 
+          height: 120px 
+        }
+          &__caption {
+          margin-bottom: 10px;
+          text-align: center;
       
-        color: var(--main-text-color--);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-      }
-        &__description {
-        color: var(--ouwer-text-color--);
+          color: var(--main-text-color--);
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+       }
+          &__description {
+          color: var(--ouwer-text-color--);
       
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-      }
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.7;
+          letter-spacing: 0.03em;
+       }
+  }
 }
+   // Tablet screen
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .features {
+    padding: 60px 15px;
+
+              &__list {
+              display: flex;
+              flex-wrap: wrap;
+           }
+              &__item {
+              width: 354px;
+           }
+              &__item:nth-child(2n + 1) {
+              margin-right: 30px;
+              }
+              &__item:nth-child(-n + 2) {
+                margin-bottom: 30px;
+              }
+              &__decor { 
+              display: flex;
+              justify-content: center; 
+              align-items: center; 
+              margin-bottom: 30px;
+          
+              background-color: var(--buttons-port-color--); 
+              width: 354px; 
+              height: 120px 
+            }
+              &__caption {
+              margin-bottom: 10px;
+          
+              color: var(--main-text-color--);
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 1.14;
+              letter-spacing: 0.03em;
+              text-transform: uppercase;
+           }
+              &__description {
+              color: var(--ouwer-text-color--);
+          
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.7;
+              letter-spacing: 0.03em;
+           }
+   }
+  }
+      // PC screen
+
+      @media screen and (min-width: 1200px) {
+        .features {
+          @include section;
+    
+            &__list {
+            display: flex;
+          }
+            &__item {
+            width: 270px;
+          }
+            &__item:not(:last-child) {
+            margin-right: 30px;
+          }
+            &__decor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+          
+            background-color: var(--buttons-port-color--);
+            width: 270px;
+            height: 120px;
+          }
+            &__caption {
+            margin-bottom: 10px;
+          
+            color: var(--main-text-color--);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+          }
+            &__description {
+            color: var(--ouwer-text-color--);
+          
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+          }
+    }
+      }
+
