@@ -1,6 +1,10 @@
-@mixin section($pt: 94px, $pb: 94px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+@mixin peddings94 ($pt: 94px, $pb: 94px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+@mixin peddings60 ($pt: 60px, $pb: 60px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
 }
 @mixin button {
   display: block;

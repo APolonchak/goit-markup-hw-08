@@ -1,6 +1,6 @@
 .header {
-    border: 1px solid #ececec;
 
+        border: 1px solid #ececec;
         &__container {
         display: flex;
         align-items: center;
@@ -9,7 +9,7 @@
         &__var-text {
         color: var(--logo-color-text--);
       }
-  }
+}
 
   /* Logo */
 
@@ -19,17 +19,29 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
+    @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    }
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
   }
   .header__logo {
+    @media screen and (max-width: 768px) {
+    padding: 16px 15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 90px;
+    }
     margin-right: 93px;
   }
   
   /* Nav */
 
   .nav {
+    @media screen and (max-width: 767px) {
+      display: none;
+  }
         &__list {
         display: flex;
       }
@@ -77,24 +89,53 @@
   /* Contact */
   
   .contact {
-    display: flex;
-    margin-left: auto;
-
+    @media screen and (max-width: 767px) {
+      display: none;
+  }
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-left: auto;
+        }
+        margin-left: 90px;
         &__item:not(:last-child) {
-        margin-right: 50px;
+        @media screen and (min-width: 1200px) {
+        margin-right: 50px;  
+        }
+        @media screen and (max-width: 1199px) {
+        margin-bottom: 10px;
+        }
       }
+      
         &__link {
         display: flex;
         align-items: center;
       
         color: var(--ouwer-text-color--);
         font-weight: 500;
+        @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        }
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
       }
         &__icon {
+        @media screen and (max-width: 1199px) {
+        margin-right: 8px;
+        }
         margin-right: 10px;
         fill: currentColor;
+      }
+        &__icon--envelope {
+        @media screen and (max-width: 1199px) {
+        width: 14px;
+        height: 10px;
+        }
+      }
+      &__icon--mobile {
+        @media screen and (max-width: 1199px) {
+        width: 10px;
+        height: 14px;
+        }
       }
   }

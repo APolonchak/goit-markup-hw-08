@@ -1,12 +1,29 @@
 .team {
-    @include section;
+    @media screen and (max-width: 1199px) {
+    @include peddings60;
+    }
+    @media screen and (min-width: 1200px) {
+    @include peddings94;
+    }
     background-color: var(--buttons-port-color--);
   }
 
 .teammates {
-    display: flex;
-
+        @media screen and (min-width: 768px) {
+        display: flex;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        }
         &__card {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+        margin: 15px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 270px;
+        }
         text-align: center;
         background-color: var(--background-color--);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -14,7 +31,32 @@
         border-radius: 0px 0px 4px 4px;
       }
         &__card:not(:last-child) {
+        @media screen and (min-width: 1200px) {
         margin-right: 30px;
+        }
+        @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+        }
+      }
+        &__card:nth-child(-n+2) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 0;
+        } 
+      }
+        &__card:nth-child(n+3) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 0;
+        } 
+      }
+        &__card:nth-child(2n+1) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 0;
+        } 
+      }
+        &__card:nth-child(2n) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 0;
+        } 
       }
     }
 

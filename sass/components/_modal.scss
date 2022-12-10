@@ -3,9 +3,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-  
+    
+    @media screen and (max-width: 1199px) {
+    width: 450px;
+    min-height: 609px 
+    }
+    @media screen and (min-width: 1200px) {
     min-width: 528px;
     min-height: 581px;
+    }
     padding: 40px;
   
     background-color: var(--background-color--);
@@ -20,6 +26,10 @@
       
         font-weight: 700;
         font-size: 20px;
+        @media screen and (max-width: 1199px) {
+        line-height: 1.5;
+        width: 370px; 
+        }
         line-height: 1.15;
         text-align: center;
         letter-spacing: 0.03em;
