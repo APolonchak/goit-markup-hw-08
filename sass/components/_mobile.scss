@@ -80,7 +80,10 @@
 .mobile-menu__item {
     margin-bottom: 32px;
 }
-
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
+    color: var(--accent-first-color--);
+}
 
 .current {
     color: var(--accent-first-color--);
