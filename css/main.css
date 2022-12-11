@@ -1311,7 +1311,7 @@ body {
 @media screen and (max-width: 1199px) {
   .modal__title {
     line-height: 1.5;
-    width: 370px;
+    width: 100%;
   }
 }
 
